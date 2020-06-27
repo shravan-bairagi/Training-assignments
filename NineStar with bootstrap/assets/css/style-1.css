@@ -1,0 +1,368 @@
+body{
+  color: #212529;
+  font-family: "Open Sans",sans-serif;
+  margin: 0;
+  }
+
+/* SCSS variables $color:"yellow" */
+/*for menu bar of header*/
+.header {
+  background-color: #fff;
+  display: block;
+  left: 0;
+  position: fixed;
+  padding: 15px 0px;
+  top: 0;
+  right: 0;
+  z-index: 500;
+}
+
+/*For Responsivenes we are adding media quries */
+.logo {
+  color: #7a6960;
+  display: inline-block;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  padding: 0 15px;
+}
+
+.menu {
+  color: #7a6960;
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Open sans",sans-serif;
+  float: right;
+  padding: 10px 15px;
+}
+
+.menu:hover {
+  color: #EB5D1E;
+}
+.menu:active  {
+  color: #EB5D1E;
+}
+.getstarted  {
+  background-color: #EB5D1E;
+  border-radius: 25px;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Open sans",sans-serif;
+  float: right;
+  margin: 0px 15px;
+  padding: 10px 25px;
+}
+.outer  {
+  background-color: #f5f0ee;
+  padding-top: 70px;
+}
+
+.insider  {
+  background-color: #f5f0ee;
+  display: inline-block;
+  padding-top: 50px;
+}
+.row  {
+  margin: 0;
+  padding: 0;
+}
+.container-fluid  {
+  margin: 0;
+  padding: 0;
+}
+
+
+h1  {
+  color: #4E4039;
+  display: inline-block;
+  font-size: 48px;
+  font-family: "Raleway", sans-serif;
+  margin: 0px 0px 10px;
+  text-align: left;
+}
+
+.we  {
+  color: #a08f86;
+  display: inline-block;
+  font-family: "Raleway",sans-serif;
+  font-size: 24px;
+  margin: 0px 0px 50px;
+  text-align: left;
+}
+
+.getstarted2  {
+  background-color: #eb5d1e;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-family: "Raleway" sans-serif;
+  font-size: 16px;
+  margin: 10px;
+  padding: 8px 28px;
+}
+
+/* ## section 2 of information  */
+.section-second-outer {
+  color: #212529;
+  display:  inline-block;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  padding-top: 40px;
+}
+.section-s-o-container {
+    margin-left: 70px;
+    margin-right: 70px;
+ }
+
+
+/*volupatatum bar */
+.volu {
+  color: #4E4039;
+  font-size: 34px;
+  font-weight: 900;
+  font-family: "Raleway",sans-serif;
+  margin-bottom: 8px;
+}
+
+.below-volu {
+  color: #5A6570;
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Open sans",sans-serif;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+/* containers of section2 */
+#file {
+  color: #eb5d1e;
+  display: inline-block;
+  margin-top: 15px;
+}
+#cube {
+  color: #eb5d1e;
+  display: inline-block;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.corporis {
+
+  color: #7a6960;
+  display:  block;
+  font-size: 20px;
+  font-family: "Raleway",sans-serif;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  text-align: left;
+
+}
+
+.conciq {
+  color: #5a6570;
+  display:  inline-block;
+  font-size: 15px;
+  font-family: "Open Sans",sans-serif;
+  height: auto;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  margin-bottom: 16px;
+}
+
+/*Section 3 */
+.section3-container {
+  background-color: #fef8f5;
+  color: #212529;
+}
+.container  {
+  margin: 0;
+  padding:0;
+}
+
+.section3-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.services {
+  color: #C2B7B1;
+  font-size: 24px;
+  font-family: "Raleway",sans-serif;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.check-out  {
+
+  color: #4e4039;
+  display: block;
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/*info boxes*/
+.box-icons  {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  color: #212529;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Open Sans",sans-serif;
+  letter-spacing: 0.4px;
+  margin-bottom: 40px;
+  opacity: 1;
+  padding: 20px;
+  text-align: center;
+}
+.box-icon-outer {
+  color: #ef7f4d;
+  display: inline-block;
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.heading-s-2  {
+  color: #111;
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.heading-s-2-inner  {
+  display: inline-block;
+
+}
+
+.section3-defi  {
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 0;
+}
+
+/*!!!!!!!!!!!!Section 4 begins from here */
+
+.section-4  {
+  background-color: #fff;
+  display: inline-block;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.section4-container {
+  margin-left: 70px;
+  margin-right: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.se-4-outer-inner {
+  padding: 20px;
+}
+.ns {
+  color: #212529;
+  display: inline-block;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 8px;
+  padding-bottom: 10px;
+}
+
+.footer-desc  {
+  color: #212529;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 8px;
+  padding-bottom: 10px;
+}
+
+.contact-bar  {
+  width: atuo;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.ns-def   {
+  color: #5C5C5C;
+  display: inline-block;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  overflow: scroll;
+  text-align: left;
+
+}
+
+ul  {
+  list-style: none;
+  line-height: 30px;
+  text-align: left;
+  padding-left: 0;
+}
+li{
+  font-size: 14px;
+  font-family: "Open Sans",sans-serif;
+  font-weight: normal;
+}
+.links {
+
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.social {
+  display: block;
+  font-family: "Open Sans",sans-serif;
+  font-weight: normal;
+  line-height: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.cont {
+  display: block;
+  line-height: 20px;
+  padding-top: 70px;
+}
+
+.social-icons {
+  color: #EB5D1E;
+  font-size: 40px;
+}
+
+/**/
+@media only screen and (min-device-width: 320px)
+and (max-device-width: 480px)
+{
+  body  {margin: 0;}
+
+  .container-fluid  {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .logo {padding-left: 10px;}
+  .menu {
+    display: none;
+  }
+  .getstarted
+  {
+    display: none;
+  }
+.insider  {
+  padding: 0;
+}
+.section-s-o-container  {
+  margin: 0;
+  padding: 0;
+}
+}
