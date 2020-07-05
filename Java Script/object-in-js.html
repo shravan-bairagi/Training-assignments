@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>
+    Object
+  </title>
+</head>
+<body>
+  <h3>This is a webpage with JS <br/> These are some objects..</h3>
+  <p id="hello"> </p>
+  <div id="abc"></div>
+
+
+  <script>
+    var i , output = "";
+    var Employee = {
+      FirstName:"John" , LastName:"Cena" , ID:2211
+      //,FullName: function (){return this.FirstName + " " + this.LastName;}
+    };
+    for (i in Employee) {
+      output += Employee[i] + " ";
+      document.getElementById("hello").innerHTML = output.toUpperCase();
+    };
+    document.write("How are you?");
+    delete Employee.ID;
+    document.getElementById('abc').innerHTML  = Employee.ID;
+    window.alert("Hello");
+    console.log("This code is for java script");
+    console.log(Object.values(Employee));
+  </script>
+</body>
+</html

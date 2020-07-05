@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>
+    Node addition
+  </title>
+</head>
+<body>
+  <h3 id="node1">This is a webpage with JS</h3>
+  <p id="hello">This is outer one.</p>
+  <script>
+  var nEle = document.createElement("div");
+  var nextNode = document.createTextNode("This is inserted by js");
+  nEle.appendChild(nextNode);
+  var final = document.getElementById('hello');
+  final.appendChild(nEle);
+  </script>
+</body>
+</html>

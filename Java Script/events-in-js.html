@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>
+    Events in js
+  </title>
+  <style>
+  #my-id1 {
+    background-color: yellow;
+    width: 30%;
+    height: 50px;
+    color: red;
+    font-weight: 700;
+  }
+  #my-id2 {
+    background-color: orange;
+    width: 30%;
+    height: 50px;
+    color: green;
+    font-weight: 700;
+  }
+  </style>
+</head>
+<body>
+  <p id="my-id1" onmouseover="func1(this)" onmouseout="func4(this)">Mouse over me</p>
+  <div id="my-id2" onmousedown="func2(this)" onmouseup="func3(this)" >click me</div>
+
+  <div onmouseover="style.color = 'red'" onmouseout="style.color='green'">This is for nothing .</div>
+  <script>
+  function func1(obj)  {
+    obj.innerHTML = "Thankyou";
+  }
+  function func2(obj)  {
+    obj.style.backgroundColor = "#1ec5e5";
+  obj.innerHTML = "Realese me!!!";
+  }
+  function func3(obj)  {
+    obj.innerHTML = "Hiiii!!!!";
+  }
+  function func4(obj) {
+    obj.innerHTML = "Mouse over me";
+  }
+  </script>
+</body>
+</html>

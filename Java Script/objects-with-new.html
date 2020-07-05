@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>
+    Objects with new
+  </title>
+</head>
+<body>
+  <h3>This is a webpage with JS</h3>
+  <p id="hello"></p>
+  <script>
+  function Person(First , Last , id)
+  {
+    this.FirstName = First;
+    this.LastName  = Last;
+    this.id = id;
+    this.name = function() {
+      return this.FirstName + " " + this.LastName;
+     };
+  }
+  var P1 = new Person("Mitchel" , "Starc" ,100);
+  var P2 = new Person("Boris" , "Johnson" , 102)
+  document.getElementById("hello").innerHTML = P1.FirstName + "\n" + P1.name();
+
+  </script>
+</body>
+</html>
