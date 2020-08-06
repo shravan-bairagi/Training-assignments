@@ -1,0 +1,337 @@
+$border-black: #bfbfbf;
+$white-color: #ffffff;
+$blue-color: #43a047;
+$arrow-hover: #0000ff;
+$hover-color: #cccccc;
+
+.outer-div {
+  .main-container {
+    box-shadow: 0 0 11px 0 black;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 50px 250px;
+    width: 60%;
+
+    .container-inner  {
+      padding: 20px;
+
+      .holder {
+        background-color: $white-color;
+        padding: 10px 0 10px 10px;
+
+        .header {
+          height: 10%;
+          .month-year-name  {
+            display: inline-block;
+            font-weight: 800;
+            margin: 0 5px;
+            padding: 0 5px;
+            text-align: center;
+            width: 200px;
+            .month-name ,.year-name {
+              background-color: $white-color;
+              color:  #8533ff;
+              display: inline-block;
+              font-size: 20px;
+              text-align: center;
+            }
+          }
+          .caret-container  {
+            display: inline-block;
+            float: right;
+            padding: 0 40px 0 0;
+          }
+          #move-next , #move-previous ,.arrow {
+            border-radius: 20px;
+            margin-bottom: 8px;
+            padding: 2px;
+            &:hover  {
+              background-color: $hover-color;
+              opacity: 0.5;
+            }
+          }
+          .my-events {
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 20px;
+            opacity: 0.5;
+            padding: 0;
+            &:hover  {
+              background-color: $hover-color;
+            }
+          }
+          .drop-container {
+            background-color: #f2f2f2;
+            color: $blue-color;
+            display:inline-block;
+            float: right;
+            font-size: 16px;
+            margin: 0 14px 0 0;
+            padding: 0 0 0 0;
+            text-align: center;
+            select {
+              text-align: center;
+              option {
+                display: block;
+              }
+            }
+          }
+          #month-content , #year-content  {
+            width: 90px;
+          }
+        }
+        .week-bar {
+          display: flex;
+          padding: 10px 0 0 0;
+          text-align: center;
+          .week-day {
+            background-color: $blue-color;
+            color: $white-color;
+            flex-wrap: nowrap;
+            font-size: 18px;
+            font-weight: 900;
+            padding: 5px 20px 5px 20px;
+            width: 14%;
+          }
+        }
+        .date-container {
+          display: flex;
+          flex-wrap: wrap;
+          .day  {
+            border-radius: 2px;
+            border: solid 1px #dddddd;
+            color: #999999;
+            display: inline-block;
+            font-size: 20px;
+            padding: 10px 40px 10px 40px;
+            text-align:center;
+            width: 14%;
+          }
+          .selectedDay  {
+            background-color: $hover-color;
+            opacity: 1;
+          }
+          .today  {
+            color: #ff0066;
+          }
+          .birthday {
+            color: #ff9900;
+            padding: 5px;
+          }
+          .day-number {
+            border-radius: 2px;
+            border: solid 1px #dddddd;
+            display: inline-block;
+            font-size: 20px;
+            padding: 10px 40px;
+            text-align:center;
+            width: 14%;
+            .btn  {
+              font-size: 20px;
+              padding: 0;
+            }
+            &:hover {
+              background-color: $hover-color;
+            }
+            .range , .events  {
+              display: block;
+              font-size: 16px;
+              padding: 10px;
+            }
+            .tooltiptext {
+              background-color: $blue-color;
+              border-radius: 10px;
+              color: $white-color;
+              font-size: 14px;
+              padding: 3px;
+              position: absolute;
+              opacity: 0;
+              transition: opacity 0.3s;
+              visibility: hidden;
+              width: 100px;
+            }
+            &:hover .tooltiptext {
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+        }
+        .event-btn-container  {
+          margin: 10px;
+          padding: 10px;
+          text-align: center;
+          .add-event-button {
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-shadow: 0 0 11px 0 lightgrey;
+            color: #000000;
+            display: inline-block;
+            font-size: 16px;
+            padding: 10px;
+            &:hover {
+              background-color: $hover-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .event-bar  {
+    padding: 20px 0;
+    .event-title  {
+      font-size: 20px;
+      margin: 5px 0;
+      padding: 2px;
+    }
+    .event-info {
+      margin: 5px 0;
+      padding: 2px 20px;
+    }
+  }
+}
+
+//media query starts from here
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .outer-div  {
+    .main-container {
+      box-shadow: none;
+      margin: 0;
+      width: 100%;
+      .modal-dialog {
+        margin: 0;
+        width: auto;
+      }
+      .container-inner  {
+        padding: 0;
+
+        .holder {
+          background-color: $white-color;
+          padding: 5px;
+
+          .header {
+            height: auto;
+            .month-year-name  {
+              display: inline-block;
+              font-weight: 800;
+              margin: 0;
+              padding: 0;
+              width: 200px;
+              .month-name ,.year-name {
+                display: inline-block;
+                font-size: 20px;
+              }
+            }
+            .caret-container  {
+              display: block;
+              float: none;
+              padding: 10px;
+              text-align: center;
+              width: auto;
+            }
+            #move-next , #move-previous ,.arrow {
+              border-radius: 20px;
+              margin-bottom: 0;
+              padding: 2px;
+            }
+            .my-events {
+              font-size: 20px;
+              padding: 0;
+            }
+            .drop-container {
+              float: none;
+              font-size: 14px;
+              margin: 0;
+              padding: 0;
+            }
+            #month-content , #year-content  {
+              float: right;
+              font-size: 12px;
+              padding: 5px;
+              width: auto;
+            }
+          }
+          .week-bar {
+            padding: 3px 0 0 0;
+            .week-day {
+              font-size: 14px;
+              font-weight: 900;
+              padding: 2px 10px;
+              width: 14%;
+            }
+          }
+          .date-container {
+            .day  {
+              font-size: 14px;
+              padding: 5px;
+              width: 14%;
+            }
+            .event-notifiy  {
+              color: #0000ff;
+            }
+            .birthday {
+              padding: 5px;
+            }
+            .day-number {
+              font-size: 14px;
+              padding: 5px;
+              width: 14%;
+              .btn  {
+                font-size: 15px; 
+              }
+              .tooltiptext {
+                font-size: 14px;
+                padding: 3px;
+                width: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .outer-div  {
+    .main-container {
+      margin: 10px 40px;
+      width: 90%;
+
+      .container-inner  {
+        padding: 20px;
+
+        .holder {
+          background-color: $white-color;
+          padding: 10px 0 10px 10px;
+
+          .header {
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and
+(max-device-width: 1279px)  {
+  .outer-div  {
+    .main-container {
+      margin: 10px 100px;
+      width: 80%;
+
+      .container-inner  {
+        padding: 20px;
+
+        .holder {
+          background-color: $white-color;
+          padding: 10px 0 10px 10px;
+
+          .header {
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}

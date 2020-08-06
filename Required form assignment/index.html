@@ -1,0 +1,96 @@
+<! doctype html>
+<html lang="en">
+  <head>
+    <title>Required Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script>
+    <script src="assets/javascript/script.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Required Form</h1>
+      <form id="required-form" class="form-horizontal">
+        <div class="form-header separater row">
+          <label class="col-sm-5" for="image">Your Image<sup class="star">*</sup>:</label>
+          <input id="inputFile" name="file" type="file" accept="image/jpeg,image/x-png,image/tiff,image/x-MS-bmp"/><br>
+          <label class="col-sm-5" for="image-preview">Image preview:</label>
+          <label class="col-sm-2" for="preview">Your Image</label>
+          <div class="col-sm-3 preview-image"><img id="preview"/></div>
+        </div>
+        <div class="form-header separater row">
+          <label for="name" class="col-sm-5">Name<sup class="star">*</sup>:</label>
+          <input id="name" name="name" type="text" class="input-md col-sm-3"/><span id="name-error" class="star"></span><br/></br>
+          <p>
+            <label for="gender" class="col-sm-5">Gender<sup class="star">*</sup>:</label>
+            <div>
+              <label class="col-sm-2">Male<input value="male" type="radio" name="gender"/></label>
+              <label class="col-sm-2">Female<input value="female" type="radio" name="gender"/></label>
+            </div><br/><br/>
+          </p><br/>
+          <p>
+            <label class="col-sm-5" for="age">Age<sup class="star">*</sup>:</label>
+            <input id="age" class="col-sm-2" type="number" name="age"/><br>
+          </p><br/>
+          <p>
+            <label class="col-sm-5" for="dob">Date Of Birth<sup class="star">*</sup>:</label>
+            <input class="col-sm-2" name="dob" type="date"/><br/><br/>
+            <label class="col-sm-5" for="color">Favourite Color<sup class="star">*</sup>:</label>
+            <input id="color" class="col-sm-1 " name="color" type="color"><br/><br/>
+            <label for="country" class="col-sm-5">Which country<sup class="star">*</sup>:</label>
+            <select id="country" name="country" class="col-sm-2">
+              <option selected disabled>Select Country</option>
+              <option>India</option>
+              <option>Russia</option>
+              <option>USA</option>
+              <option>Canada</option>
+              <option>South Affrica</option>
+            </select><br/><br/>
+          </p>
+        </div>
+        <div class="form-header separater row">
+          <label class="col-sm-5" for="hight">  Hight:</label>
+          <label class="col-sm-1 rangeBars">Short</label>
+          <div class="col-sm-3">
+            <input type="range" min="1" max="100" value="50" onchange="updateTextInput1(this.value);"/><input type="text" id="hight-val" />
+          </div>
+          <label for="tall" class="col-sm-1 rangeBars">Tall</label><br/><br/>
+          <br/>
+          <label class="col-sm-5" for="Salary">Salary:</label>
+          <label class="col-sm-1 rangeBars" for="poor"> Poor </label>
+          <div class="col-sm-3">
+            <input type="range" min="1" max="100" value="50" onchange="updateTextInput2(this.value);"/><input type="text" id="salary-val" />
+          </div>
+          <label class="col-sm-1 rangeBars" for="rich">Rich</label>
+        </div>
+        <div class="form-header separater row">
+          <label for="email" class="col-sm-5">Email ID<sup class="star">*</sup>:</label>
+          <input id="Email" name="email" class="col-sm-5" type="email" /><span id="email-error" class="star"></span><br/><br/>
+          <label class="col-sm-5" for="mobile">Mobile<sup class="star">*</sup>:</label>
+          <input  name="mobile" type="tel" class="col-sm-5"/><br/><br/>
+          <label class="col-sm-5" for="address">Address<sup class="star">*</sup></label>
+          <textarea name="address" class="col-sm-5 textarea" type="text"></textarea>
+          <br/><br/><br/>
+          <p>
+            <label for="contact" class="col-sm-5">Method to contact you<sup class="star">*</sup>:</label>
+            <label class="col-sm-2"><input name="mcontact" type="checkbox" value="Email"> Email</label>
+            <label class="col-sm-2"><input name="mcontact" type="checkbox" value="Whatsapp"> Whatsapp</label>
+            <label class="col-sm-2"><input name="mcontact" type="checkbox" value="In-app chat"> In-app chat</label>
+          </p>
+        </div>
+        <div class="separater">
+          <button class="btn btn-large register" type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
