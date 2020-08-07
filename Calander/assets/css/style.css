@@ -1,0 +1,143 @@
+.main-container {
+  box-shadow: 0 0 11px 0 lightgrey;
+  border-radius: 10px;
+  margin: 50px 250px;
+  width: 60%; }
+  .main-container .container-inner {
+    padding: 20px; }
+    .main-container .container-inner .holder {
+      background-color: #ffffff;
+      padding: 10px 0 10px 10px; }
+      .main-container .container-inner .holder .header {
+        height: 10%; }
+        .main-container .container-inner .holder .header .month-year-name {
+          display: inline-block;
+          font-weight: 800;
+          margin: 0 5px;
+          padding: 0 5px;
+          text-align: center;
+          width: 200px; }
+          .main-container .container-inner .holder .header .month-year-name .month-name, .main-container .container-inner .holder .header .month-year-name .year-name {
+            background-color: #ffffff;
+            color: #8533ff;
+            display: inline-block;
+            font-size: 20px;
+            text-align: center; }
+        .main-container .container-inner .holder .header .caret-container {
+          display: inline-block;
+          float: right;
+          padding: 0 40px 0 0; }
+        .main-container .container-inner .holder .header #move-next, .main-container .container-inner .holder .header #move-previous, .main-container .container-inner .holder .header .arrow {
+          border-radius: 20px;
+          margin-bottom: 8px;
+          padding: 2px; }
+          .main-container .container-inner .holder .header #move-next:hover, .main-container .container-inner .holder .header #move-previous:hover, .main-container .container-inner .holder .header .arrow:hover {
+            background-color: #e1e1ea;
+            opacity: 0.5; }
+        .main-container .container-inner .holder .header .my-events {
+          border-radius: 20px;
+          display: inline-block;
+          float: right;
+          font-size: 20px;
+          margin-right: 40px;
+          opacity: 0.5;
+          padding: 5px; }
+          .main-container .container-inner .holder .header .my-events:hover {
+            background-color: #43a047; }
+        .main-container .container-inner .holder .header .drop-container {
+          background-color: #f2f2f2;
+          color: #43a047;
+          display: inline-block;
+          float: right;
+          font-size: 16px;
+          margin: 0 14px 0 0;
+          padding: 0 0 0 0;
+          text-align: center; }
+          .main-container .container-inner .holder .header .drop-container #month-content, .main-container .container-inner .holder .header .drop-container #year-content {
+            width: 90px; }
+          .main-container .container-inner .holder .header .drop-container select {
+            text-align: center; }
+            .main-container .container-inner .holder .header .drop-container select option {
+              display: block; }
+      .main-container .container-inner .holder .week-bar {
+        display: flex;
+        padding: 10px 0 0 0;
+        text-align: center; }
+        .main-container .container-inner .holder .week-bar .week-day {
+          background-color: #43a047;
+          color: #ffffff;
+          flex-wrap: nowrap;
+          font-size: 18px;
+          font-weight: 900;
+          padding: 5px 20px 5px 20px;
+          width: 14%; }
+          .main-container .container-inner .holder .week-bar .week-day:hover {
+            opacity: 0.5; }
+      .main-container .container-inner .holder .date-container {
+        display: flex;
+        flex-wrap: wrap; }
+        .main-container .container-inner .holder .date-container .day {
+          display: inline-block;
+          color: #999999;
+          padding: 20px 50px 20px 5px;
+          width: 14%; }
+        .main-container .container-inner .holder .date-container .selectedDay {
+          background-color: #cccccc;
+          opacity: 1; }
+        .main-container .container-inner .holder .date-container .selectedDay:hover {
+          background-color: #99e6ff; }
+        .main-container .container-inner .holder .date-container .blank {
+          border: none; }
+        .main-container .container-inner .holder .date-container .today {
+          color: #ff0066; }
+        .main-container .container-inner .holder .date-container .birthday {
+          color: #ff9900; }
+        .main-container .container-inner .holder .date-container .day-number {
+          border-radius: 2px;
+          border: solid 1px #dddddd;
+          display: inline-block;
+          font-size: 20px;
+          padding: 10px 40px 10px 40px;
+          text-align: center;
+          width: 14%; }
+          .main-container .container-inner .holder .date-container .day-number:hover {
+            background-color: #cccccc; }
+          .main-container .container-inner .holder .date-container .day-number .tooltiptext {
+            visibility: hidden;
+            background-color: #43a047;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 1;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s; }
+          .main-container .container-inner .holder .date-container .day-number:hover .tooltiptext {
+            background-color: #43a047;
+            visibility: visible;
+            opacity: 1; }
+
+.event-bar {
+  display: none;
+  border: 8px solid #bfbfbf;
+  border-radius: 10px;
+  float: right;
+  height: 70%;
+  margin: 65px 70px 70px 0;
+  width: 21%; }
+  .event-bar .event-heading {
+    border-bottom: 8px solid #99ddff;
+    font-size: 20px;
+    padding: 20px 0 10px 0;
+    width: 100%;
+    opacity: 1;
+    text-align: center; }
+  .event-bar .event-info {
+    font-size: 20px;
+    margin: 5px 0;
+    padding: 2px; }
+    .event-bar .event-info .heading-of-event {
+      display: none; }
+
+/*# sourceMappingURL=style.css.map */
