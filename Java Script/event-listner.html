@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>
+    Event Listner
+  </title>
+</head>
+<body>
+  <button id="hello">Click me</button>
+  <script>
+   var x = document.getElementById("hello");
+   x.addEventListener("click" , myfunc1);
+   x.addEventListener("click" , myfunc2);
+
+   function myfunc2() {
+    document.write("Hurrey!!");
+   }
+   function myfunc1 ()  {
+    alert("HELLO");
+   }
+  </script>
+</body>
+</html>

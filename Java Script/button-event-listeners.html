@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>
+    Event Listner
+  </title>
+</head>
+<body>
+  <button id="hello">Click me</button>
+  <p id="hell"></p>
+  <script>
+   var x = document.getElementById("hello");
+   x.addEventListener("click" , myfunc1);
+   x.addEventListener("mouseover" , myfunc2);
+   x.addEventListener("mouseup" , myfunc3)
+   function myfunc2() {
+    document.getElementById('hell').innerHTML += "Mouse Over <br/>";
+   }
+   function myfunc1() {
+    document.getElementById('hell').innerHTML += "Clicked <br/>";
+  }
+  function myfunc3() {
+   document.getElementById('hell').innerHTML += "Mouse up <br/>";
+  }
+  x.removeEventListener("click",myfunc1);
+  </script>
+</body>
+</html>

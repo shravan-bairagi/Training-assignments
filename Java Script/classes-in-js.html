@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>
+    Classs
+  </title>
+</head>
+<body>
+  <h3>This is a webpage with JS</h3>
+  <p id="hello"></p>
+  <script>
+
+  class MyClass {
+    constructor (car) {
+      this.carName = car;
+    }
+    Intro  () {
+      return "I have " + " " + this.carName;
+    }
+  }
+
+  class Child extends MyClass {
+    constructor (car , brand) {
+      super(car);
+      this.brand = brand;
+    }
+
+    Func1 ()  {
+      return this.Intro() + " " +"i.e." + this.brand;
+    }
+  }
+  Car1 = new MyClass("Audi");
+  Car2 = new Child("DC","TATA");
+  document.getElementById("hello").innerHTML = Car2.Func1();
+  </script>
+</body>
+</html>

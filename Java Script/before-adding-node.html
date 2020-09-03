@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>
+    Node addition
+  </title>
+</head>
+<body>
+  <div id="node1">
+    <h3>This is a webpage with JS</h3>
+    <p id="hello">This is outer one.</p>
+  </div>
+  <script>
+  var nEle = document.createElement("div");
+  var nextNode = document.createTextNode("This is inserted by js");
+  nEle.appendChild(nextNode);
+  var final = document.getElementById('hello');
+  var child = document.getElementById('node1');
+  child.insertBefore(nEle,final);
+  </script>
+</body>
+</html>

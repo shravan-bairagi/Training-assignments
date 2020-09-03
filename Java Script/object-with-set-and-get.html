@@ -1,0 +1,25 @@
+<! doctype html>
+<html>
+<head>
+  <title>
+    setter and getter
+  </title>
+</head>
+<body>
+  <h3>This is a webpage with JS</h3>
+  <p id="hello"></p>
+  <script>
+   var Person = {FirstName:"John",
+   LastName:"Smith",
+   age:20,
+   getFname : function() {
+    return this.FirstName;
+  },
+  getLname : function() {
+    return this.LastName;
+  }
+ };
+ document.getElementById("hello").innerHTML = Person.getFname();
+</script>
+</body>
+</html>
