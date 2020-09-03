@@ -1,0 +1,196 @@
+$border-black: #bfbfbf;
+$white-color: #ffffff;
+$blue-color: #43a047;
+$arrow-hover: #0000ff;
+$hover-color: #e1e1ea;
+.main-container {
+  // border: 8px solid $border-black;
+  box-shadow: 0 0 11px 0 lightgrey;
+  border-radius: 10px;
+  margin: 50px 250px;
+  width: 60%;
+
+  .container-inner  {
+    padding: 20px;
+
+    .holder {
+      background-color: $white-color;
+      padding: 10px 0 10px 10px;
+
+      .header {
+        height: 10%;
+        .month-year-name  {
+          display: inline-block;
+          font-weight: 800;
+          margin: 0 5px;
+          padding: 0 5px;
+          text-align: center;
+          width: 200px;
+          .month-name ,.year-name {
+            background-color: $white-color;
+            color:  #8533ff;
+            display: inline-block;
+            font-size: 20px;
+            text-align: center;
+          }
+        }
+        .caret-container  {
+          display: inline-block;
+          float: right;
+          padding: 0 40px 0 0;
+        }
+        #move-next , #move-previous ,.arrow {
+          border-radius: 20px;
+          margin-bottom: 8px;
+          padding: 2px;
+          &:hover  {
+            background-color: $hover-color;
+            opacity: 0.5;
+          }
+        }
+        .my-events {
+          border-radius: 20px;
+          display: inline-block;
+          float: right;
+          font-size: 20px;
+          margin-right: 40px;
+          opacity: 0.5;
+          padding: 5px;
+          &:hover  {
+            background-color: $blue-color;
+          }
+        }
+        .drop-container {
+          background-color: #f2f2f2;
+          color: $blue-color;
+          display:inline-block;
+          float: right;
+          font-size: 16px;
+          margin: 0 14px 0 0;
+          padding: 0 0 0 0;
+          text-align: center;
+          #month-content, #year-content  {
+            width: 90px;
+          }
+          select {
+            text-align: center;
+            option {
+              display: block;
+            }
+          }
+        }
+      }
+      .week-bar {
+        display: flex;
+        // justify-content: space-between;
+        padding: 10px 0 0 0;
+        text-align: center;
+        .week-day {
+          background-color: $blue-color;
+          color: $white-color;
+          flex-wrap: nowrap;
+          font-size: 18px;
+          font-weight: 900;
+          padding: 5px 20px 5px 20px;
+          width: 14%;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+      .date-container {
+        display: flex;
+        flex-wrap: wrap;
+        .day  {
+          display: inline-block;
+          color: #999999;
+          padding: 20px 50px 20px 5px;
+          width: 14%;
+        }
+        .selectedDay  {
+          background-color: #cccccc;
+          opacity: 1;
+        }
+        .selectedDay:hover  {
+          background-color: #99e6ff;
+        }
+        .blank  {
+          border: none;
+        }
+        .today  {
+          color: #ff0066;
+        }
+        .birthday {
+          color: #ff9900;
+        }
+        .day-number {
+          border-radius: 2px;
+          border: solid 1px #dddddd;
+          display: inline-block;
+          font-size: 20px;
+          padding: 10px 40px 10px 40px;
+          text-align:center;
+          width: 14%;
+          &:hover {
+            background-color: #cccccc;
+          }
+          .tooltiptext {
+            visibility: hidden;
+            background-color: $blue-color;
+            color: $white-color;
+            text-align: center;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 1;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+          }
+          &:hover .tooltiptext {
+            background-color: $blue-color;
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+.event-bar  {
+  display: none;
+  border: 8px solid $border-black;
+  border-radius: 10px;
+  float: right;
+  height: 70%;
+  margin: 65px 70px 70px 0;
+  width: 21%;
+  .event-heading  {
+    border-bottom: 8px solid #99ddff;
+    font-size: 20px;
+    padding: 20px 0 10px 0;
+    width: 100%;
+    opacity: 1;
+    text-align: center;
+  }
+  .event-info {
+    font-size: 20px;
+    margin: 5px 0;
+    padding: 2px;
+    .heading-of-event {
+      display: none;
+    }
+  }
+}
+//media query starts from here
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+
+}
+
+@media only screen and (min-device-width: 1024px) and
+(max-device-width: 1279px)  {
+  
+}
