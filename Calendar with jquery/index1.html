@@ -1,0 +1,98 @@
+<! doctype html>
+<html lang="en">
+  <head>
+    <title>Calendar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="outer-div">
+      <div class="main-container">
+        <div class="container-inner">
+          <div class="holder">
+            <!--Month and year bar starts from here-->
+            <div class="header">
+                <div id="drop-dd" class="drop-container dropdown">
+                  <select id="year-content" class="form-control" onchange="changeYear()">
+                  </select>
+                </div>
+
+                <div id="drop-d" class="drop-container dropdown">
+                  <select id="month-content" class="form-control" onchange="changeMonth()">
+                  </select>
+                </div>
+                <div class="caret-container">
+                  <div id="move-previous" class="btn glyphicon glyphicon-menu-left arrow" onclick="previousFunction()">
+                  </div>
+                  <div class="month-year-name">
+                    <div id="MonthNames" class="month-name"></div>
+                    <div id="yearNames" class="year-name"></div>
+                  </div>
+                  <div id="move-next" class="btn glyphicon glyphicon-menu-right arrow" onclick="nextFunction()">
+                  </div>
+                </div>
+            </div>
+            <!--Week days starts from here-->
+            <div id="weeker" class="week-bar">
+            </div>
+            <!--Dates starts from here -->
+            <div id="date-days" class="date-container"></div>
+            <div class="event-btn-container"></div>
+          </div>
+        </div>
+      </div>
+    <!--Modal for event display-->
+    <div id="display-event" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Events for today</h4>
+          </div>
+          <div class="modal-body">
+            <div id="date-event" class="event-bar"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal to add events-->
+    <div id="event-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Event Scheduler</h4>
+            </div>
+            <div class="modal-body">
+              <form role="form" onsubmit="formSubmission(event)">
+                <div class="form-group">
+                  <label for="Event">Event</label>
+                  <input type="text" class="form-control" id="event-name" placeholder="Enter Event" required>
+                </div>
+                <div class="form-group">
+                  <label for="description"> Description</label>
+                  <input type="text" class="form-control" id="event-description" placeholder="Add Description" required>
+                </div>
+                  <button id="submit-event" type="button" class="btn btn-default" onclick="formSubmission(event)">Submit
+                  </button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="assets/javascript/script.js"></script>
+  </body>
+</html>

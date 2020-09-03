@@ -1,0 +1,45 @@
+.main-container {
+  border: 3px solid #663300;
+  margin: 40px;
+  text-align: center;
+  .error {
+      color: red;
+   }
+  .name-class {
+    display: none;
+  }
+
+  h1  {
+    // border-bottom: 3px solid #663300;
+    text-align: center;
+  }
+  .preview-image  {
+    height: 50px;
+    overflow: hidden;
+    width: 200px;
+  }
+  .row  {
+    margin: 0;
+  }
+  .separater  {
+    margin: 10px;
+  }
+  .form-header  {
+    background-color:  #dfbf9f;
+    border: 5px solid #663300;
+    font-weight: 800;
+    padding: 20px 50px 0;
+    .star {
+      color: #ff3300;
+    }
+    .rangeBars  {
+      background-color: #cc6600;
+      padding: 10px;
+    }
+  }
+  .register {
+    background-color: #663300;
+    color: #ffffff;
+    padding: 10px 200px;
+  }
+}

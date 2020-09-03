@@ -1,0 +1,141 @@
+.header {
+  background-color: #ffffff;
+  padding: 10px 0 10px 0;
+  position: fixed;
+  top: 0;
+  z-index: 800; }
+  .header .header-container {
+    padding: 0 0 0 50px; }
+    .header .header-container .icon {
+      color: #ff0000;
+      font-size: 30px; }
+    .header .header-container .brand {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 500; }
+      .header .header-container .brand .IN {
+        font-size: 10px;
+        font-weight: 300; }
+    .header .header-container .search-bar-container {
+      padding: 0 0 0 100px;
+      display: inline-block;
+      width: 60%; }
+      .header .header-container .search-bar-container .search-icon {
+        display: inline-block;
+        width: 60px; }
+
+.main-container {
+  margin-top: 70px; }
+  .main-container .sidebar {
+    display: inline-block;
+    height: 100%;
+    padding: 0 20px 20px 20px;
+    width: 7%; }
+    .main-container .sidebar .home-container {
+      padding: 15px 10px 20px 0; }
+  .main-container .video-container {
+    display: inline-block;
+    padding: 10px;
+    width: 93%; }
+    .main-container .video-container .vid-container {
+      padding: 10px 0 10px 0;
+      margin: 10px 0 10px 0; }
+    .main-container .video-container .video-tile {
+      height: 200px; }
+    .main-container .video-container .text-tile {
+      font-weight: 800;
+      min-height: 110px;
+      max-height: 110px;
+      overflow: hidden;
+      padding: 20px 0 20px 0; }
+    .main-container .video-container .title-tile {
+      min-height: 20px;
+      padding: 10px 0 0 0;
+      font-weight: normal; }
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .header .header-container {
+    padding: 30px 0 30px 10px; }
+    .header .header-container .icon {
+      font-size: 50px; }
+    .header .header-container .brand {
+      font-size: 60px; }
+    .header .header-container .search-bar-container {
+      padding: 0 0 0 30px;
+      display: inline-block;
+      width: 60%;
+      min-height: 50px; }
+      .header .header-container .search-bar-container .search-icon {
+        display: inline-block;
+        width: 70px; }
+
+  .main-container .sidebar {
+    display: none; }
+  .main-container .video-container, .main-container .row {
+    padding: 0;
+    width: 100%; }
+    .main-container .video-container .vid-container, .main-container .video-container .col-sm-3, .main-container .row .vid-container, .main-container .row .col-sm-3 {
+      padding: 30px;
+      margin: 10px;
+      min-width: 100%; }
+    .main-container .video-container .video-tile, .main-container .row .video-tile {
+      min-height: 500px;
+      min-width: 100%; }
+    .main-container .video-container .text-tile, .main-container .row .text-tile {
+      font-size: 50px;
+      font-weight: 800;
+      min-height: 400px;
+      max-height: 400px;
+      min-width: 100%;
+      overflow: hidden;
+      padding: 20px 0 20px 0; }
+    .main-container .video-container .title-tile, .main-container .row .title-tile {
+      min-height: 50px;
+      padding: 10px 0 0 0;
+      font-weight: normal; } }
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .header .header-container {
+    padding: 0 0 0 10px; }
+    .header .header-container .icon {
+      font-size: 40px; }
+    .header .header-container .brand {
+      font-size: 30px; }
+    .header .header-container .search-bar-container {
+      padding: 0 0 0 80px; }
+
+  .main-container .sidebar {
+    display: none; }
+  .main-container .video-container, .main-container .row {
+    padding: 0;
+    width: 100%; }
+    .main-container .video-container .vid-container, .main-container .video-container .col-sm-3, .main-container .row .vid-container, .main-container .row .col-sm-3 {
+      padding: 20px;
+      margin: 10px;
+      min-width: 47%; }
+    .main-container .video-container .video-tile, .main-container .row .video-tile {
+      height: 300px;
+      min-width: 100%; } }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1279px) {
+  .header .header-container {
+    padding: 0 0 0 10px; }
+    .header .header-container .icon {
+      font-size: 40px; }
+    .header .header-container .brand {
+      font-size: 30px; }
+    .header .header-container .search-bar-container {
+      padding: 0 0 0 80px; }
+
+  .main-container .sidebar {
+    display: none; }
+  .main-container .video-container, .main-container .row {
+    padding: 0;
+    width: 100%; }
+    .main-container .video-container .vid-container, .main-container .video-container .col-sm-3, .main-container .row .vid-container, .main-container .row .col-sm-3 {
+      padding: 30px;
+      margin: 10px;
+      min-width: 30%; }
+    .main-container .video-container .video-tile, .main-container .row .video-tile {
+      height: 200px;
+      min-width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
